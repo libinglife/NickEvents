@@ -261,5 +261,5 @@ class NickEvents {
         }
     }
 }
-//module.exports = NickEvents;
-export default NickEvents;
+module.exports = NickEvents;
+//export default NickEvents;
