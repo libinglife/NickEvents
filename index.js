@@ -1,6 +1,6 @@
 /**
  * @author cuichuanteng 崔传腾
- * @version 1.0.0 
+ * @version 1.0.1 
  * @email 401541212@qq.com
  */
 class NickEventsPermission {
@@ -16,7 +16,7 @@ class NickEventsPermission {
             if (name && !events.get(name)) {
                 const eventsPermission = new Map(Object.entries({ event, from: new Map(), to: new Map() }));
                 events.set(name, eventsPermission);
-            } else if(name){
+            } else if (name) {
                 console.warn(`Event object with ${name} name already exists`);
             }
             return this;
@@ -261,5 +261,7 @@ class NickEvents {
         }
     }
 }
-module.exports = NickEvents;
+if (typeof module !== 'undefined') {
+    module.exports = NickEvents;
+}
 //export default NickEvents;

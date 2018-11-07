@@ -26,6 +26,24 @@
 ----   
 如果你想快速查看NickEvents到底解决什么问题可以先看看最底部的[综合示例](#异步与流程控制)   
 如果你觉得[综合示例](#异步与流程控制)无法满足你可以直接移步[组件通信与权限](#组件通信)
+## 安装
+1. [npm包安装](#npm安装与使用)
+2. [不用npm的安装方式](#不使用npm的安装方式)
+## npm安装与使用
+npm或cnpm安装都可以，一句话就安装如下
+```
+    npm install nick-events
+```
+使用
+```js
+    const NickEvents = require('nick-events');
+```
+## 不使用npm的安装方式
+1. 如果不使用npm安装则需要下载NickEvents.js
+2. 使用script标签引入NickEvents.js就可以啦
+```html
+    <script src="NickEvents.js"></script>
+```
 ## on
 ### 简单的事件绑定
 1. 同一个事件可以绑定多个回调函数
